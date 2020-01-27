@@ -1,0 +1,633 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+/* get it from the note in the navigation section; the link is https://github.com/HackerYou/bootcamp-notes/blob/master/css/navigations.md */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 29px;
+    font-size: 13px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h1,h2,h3{
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.7rem;
+}
+
+h4{
+    font-size: 1.2rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+p{
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif; 
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display:block;
+    max-width: 100%;
+}
+
+ul{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+a:hover,
+a:focus,
+a:active{
+    background-color: white;
+    color: cornflowerblue;
+    border-radius: 20%;
+}
+
+button{
+    background-color: #8DD7E9;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2% 5%;
+    margin: 5% auto;
+    display: block;
+}
+
+button:hover,
+button:focus,
+button:active{
+    background: white;
+    color: #8DD7E9;
+}
+
+/* header styles */
+header{
+    color: white;
+    background-image: url(summit-assets/asset-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+}
+
+
+.logo{
+    float: left;
+    margin: 1% 10%;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.orginal-menu{
+    float: right;
+    margin: 1% 3%;
+    width: 35%;
+}
+
+.hamburger-menu{
+    float: right;
+    margin: 2%;
+    text-align: center;
+    display: none;
+}
+
+.hamburger-menu i{
+    font-size: 2rem;
+}
+
+.hamburger-menu ul{
+    padding:0;
+    display: none;
+}
+
+.hamburger-menu li{
+    display: block;
+}
+
+.hamburger-menu i:hover .hamburger-menu ul{
+    display: inline-block;
+}
+
+header li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 1%;
+}
+
+.header-text{
+    padding-top:20%;
+}
+
+.header-text p{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.social-media{
+    float: right;
+    margin:8% 5% 0 0;
+    width: 60px;
+}
+
+.social-media a{
+    display: block;
+    color: #215A6D;
+}
+
+.social-media a:hover,
+.social-media a:focus{
+    transform: scale(1.5);
+}
+
+/* about styles */
+.about-summit{
+    width: 60%;
+    margin: 5% auto;
+}
+
+/* blog styles */
+.pic-fuji,.pe,.pp{
+    float: left;
+    background-color: #F6F6F6;
+    text-align: center;
+}
+
+.blog p{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.pic-plane,.pic-fuji{
+    width: 50%;
+}
+
+.pp,.pe{
+    width: 50%;
+}
+
+.pp{
+    padding: 4.5% 13% 5% 3%;
+}
+
+.pe{
+    padding: 4.5% 3% 4.9% 13%;
+}
+
+.pic-plane{
+    float: right;
+}
+
+
+/* middle nav sytles */
+.middle-nav{
+    background-color: #215A6D;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.icons{
+    margin: 0 auto;
+    text-align: center;
+    width: 45%;
+    font-size: 1rem;
+}
+
+.icon{
+    float: left;
+    padding: 8% 10%;
+    display: block;
+}
+
+.icon i{
+    display: block;
+}
+
+/* about me styles */
+.about-first{
+    background-color: #F6F6F6;
+    margin:0;
+}
+
+.about-first .content-container{
+    width: 90%;
+}
+
+.about-first{
+    padding: 5% 10% 5% 11%;
+}
+
+.about-first img,
+.about-me .content{
+    float: left;
+}
+
+.about-me img{
+    width: 25%;
+    float: left;
+}
+
+.content{
+    width: 69%;
+    margin-left: 4%;
+}
+
+.about-me .content p,
+.about-me .content h2{
+    text-align: left;
+    padding: 1% 0;
+    line-height: 20px;
+}
+
+.about-me button{
+    margin: 0;
+}
+
+.about-gallery .wrapper{
+    width: 80%;
+}
+.about-gallery img{
+    width: calc((100% - 6%) / 3);
+    margin: 5% 1%; 
+}
+
+/* footer styles */
+.footer-top{
+    background-color: #215A6D;
+    color: white;
+    padding: 5% 0;
+}
+
+.left, .pages,.contact,.recent-posts{
+    float: left;
+}
+
+.left{
+    width: 50%;
+    padding-left: 10%;
+    text-align: left;
+}
+
+.left p,
+input[type='email']{
+    text-align: left;
+}
+
+.left h4{
+    margin-bottom: 0;
+}
+
+form{
+    padding-top: 2%;
+    font-size: 0.8rem;
+}
+
+input[type='email'], footer button{
+    float: left;
+    margin: 0;
+    padding: 2%;
+    border: none;
+}
+
+input[type='email']{
+    width: 65%;
+}
+
+.pages,.contact{
+    width: 10%;
+    margin-right: 2%;
+}
+
+.recent-posts{
+    width: 14%;
+}
+
+.footer-top ul{
+    padding: 0;
+}
+
+.footer-top li{
+    list-style-type: none;
+    font-weight: normal;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.copyright{
+    clear: both;
+    background-color: #094154;
+    color: white;
+}
+
+/* responsive design */
+
+@media(max-width: 941px){
+    /* blog */
+    .pp,.pe{
+        padding: 2%;
+    }
+
+    .blog button{
+        padding: 2% 5%;
+        margin: 3.5% auto;
+    }
+
+    /* middle nav */
+    .icon{
+        padding: 6%;
+    }
+}
+
+/* ipad version */
+@media(max-width:769px){
+    /* header */
+    .header-text p{
+        margin-top: 11%;
+    }
+
+    .social-media i{
+        color: white;
+    }
+
+    /* blog */
+    .pp,.pe{
+        padding: 0;
+    }
+
+    .blog button{
+        padding: 1% 5%;
+        margin: 0.5% auto;
+    }
+
+    /* about me */
+
+    .about-me img{
+        width: 40%;
+        margin-top: 5%;
+    }
+
+    .content{
+        width: 56%;
+    }
+
+    .about-gallery .wrapper{
+        width: 100%;
+    }
+
+    .about-gallery img{
+        width: calc(100% / 3);
+        margin:0;
+    }
+
+    /* footer */
+    .left,.contact,.pages,.recent-posts{
+        width: 45%;
+        margin-right: 5%;
+    }
+
+    .pages h4{
+        text-align: center;
+    }
+    .pages ul{
+        text-align: center;
+    }
+}
+
+
+/* mobile version */
+@media(max-width:376px){
+    button{
+        padding: 5% 7%;
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    button:hover,
+    button:focus{
+        background: white;
+        color: #8DD7E9;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    h4{
+        font-size: 1.7rem;
+    }
+
+    /* header */
+    .orginal-menu{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: block;
+        margin-right: 5%;
+        font-weight: normal;
+    }
+
+    .hamburger-menu:hover ul,
+    .hamburger-menu:active ul,
+    .hamburger-menu:focus ul{
+        display: block;
+    }
+
+    .logo{
+        margin: 4%;
+    }
+
+    header{
+        background-position-x: -535px;
+    }
+
+    .header-text p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        margin: 30% 0 7%;
+    }
+
+    .social-media{
+        display: none;
+    }
+
+    /* about summit */
+    .about-summit{
+        width: 80%;
+    }
+
+    .about-summit h2{
+        padding: 8%;
+    }
+
+    .blog p{
+        width: 90%;
+        padding-top: 3%;
+    }
+
+    .pic-fuji,.pe,.pp,.pic-plane{
+        float: none;
+        width: 100%;
+    }
+
+    .pp,.pe{
+        padding: 8% 0;
+    }
+
+    /* middle nav */
+    .icons{
+        padding: 5% 0;
+    }
+
+    .icon{
+        float: none;
+        font-size: 1.4rem;
+        padding: 15%;
+    }
+
+    .icon i{
+        padding-bottom: 10%;
+        font-size: 2rem;
+    }
+
+    /* about me */
+    .about-first img,
+    .about-me .content{
+        float: none;
+        width: 100%;
+    }
+
+    .about-first,
+    .content-container{
+        width: 100%;
+        text-align: center;
+        margin:0 auto
+    }
+
+    .about-first{
+        padding: 5% 1%;
+    }
+
+    .about-first img{
+        padding: 10%;
+    }
+
+    .about-me .content h2{
+        text-align: center;
+        padding: 8%;
+    }
+
+    .about-me .content p{
+        line-height: 25px;
+    }
+
+    .about-first button{
+        margin: 5% auto;
+    }
+
+    .about-gallery .wrapper{
+        width: 100%;
+    }
+
+    .about-gallery img{
+        width: 50%;
+        margin: 0;
+    }
+
+    .about-gallery img:nth-child(3){
+        display: none;
+    }
+
+    /* footer */
+    .left, .pages, .contact, .recent-posts{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer h4{
+        text-align: center;
+        margin: 10% 0 0 0;
+    }
+
+    .footer-top li,
+    footer p{
+        font-size: 1.1rem;
+        font-weight: normal;
+    }
+
+    .left{
+        padding-left: 0;
+    }
+
+    form,
+    .left p{
+        padding-left: 10%;
+    }
+
+    input[type='email'],
+    footer button{
+        width: 90%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .contact{
+        margin-top: 24%;
+    }
+
+    .contact li{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
